@@ -1,31 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test 1</title>
-    <style>
-    </style>
-</head>
-<body>
 <?php
-// Khởi tạo mảng menu
-$menus = [
-"Trang chủ",
-"Tin tức",
-"Liên hệ",
-"Giới thiệu"
-];
+    echo "nguyenquangthang - 26/07/2007 - 2125110082 <br>";
+
+    $hoten = "nguyenquangthang";
+    $mssv = "2125110082";
+    $sdt = "0358373246";
+    $ngsinh = "26/07/2007";
+    echo $hoten." ".$mssv." ".$sdt." ".$ngsinh."<br>";
+
+    const HOST = "HOST";
+    const DATABASE = "DATABASE";
+    const USERNAME = "USERNAME";
+    const PASSWORD = "PASSWORD";
+    echo HOST." ".DATABASE." ".USERNAME." ".PASSWORD;
+
+    // " " xuat cac bien va mot so ky tu dac biet trong chuoi
+    // ' ' xuat chuoi thong thuong, khong tu dong thay the bien
+
+    // single-line
+    /*
+        multi-line
+    */
 ?>
-<!-- =====Menu====== -->
-<nav>
-<ul>
-<?php foreach ($menus as $menu) { ?>
-<li>
-<a href="#"><?= $menu ?></a>
-</li>
-<?php } ?>
-</ul>
-</nav>
-</body>
-</html>
